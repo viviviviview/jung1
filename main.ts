@@ -1,0 +1,117 @@
+function clear () {
+    OLED12864_I2C.showString(
+    0,
+    0,
+    "    ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    1,
+    "      ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    2,
+    "       ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    3,
+    "      ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    4,
+    "      ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    5,
+    "       ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    6,
+    "     ",
+    1
+    )
+    OLED12864_I2C.showString(
+    0,
+    7,
+    "     ",
+    1
+    )
+}
+OLED12864_I2C.init(60)
+clear()
+basic.forever(function () {
+    OLED12864_I2C.rect(
+    20,
+    10,
+    21,
+    30,
+    1
+    )
+    OLED12864_I2C.rect(
+    43,
+    10,
+    44,
+    30,
+    1
+    )
+    OLED12864_I2C.rect(
+    10,
+    25,
+    11,
+    40,
+    1
+    )
+    OLED12864_I2C.rect(
+    53,
+    25,
+    54,
+    40,
+    1
+    )
+    OLED12864_I2C.rect(
+    12,
+    41,
+    13,
+    44,
+    1
+    )
+    OLED12864_I2C.rect(
+    51,
+    41,
+    52,
+    44,
+    1
+    )
+    OLED12864_I2C.rect(
+    14,
+    45,
+    15,
+    47,
+    1
+    )
+    OLED12864_I2C.rect(
+    49,
+    45,
+    50,
+    47,
+    1
+    )
+    OLED12864_I2C.rect(
+    16,
+    48,
+    48,
+    49,
+    1
+    )
+})
